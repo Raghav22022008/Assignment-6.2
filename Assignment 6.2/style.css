@@ -1,0 +1,187 @@
+
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+/* Card layout */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    padding: 40px 20px;
+}
+
+.card {
+    width: 100%;
+    max-width: 300px;
+    min-height: 350px;
+    padding: 25px;
+    border: 2px solid;
+    border-radius: 18px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 27px;
+}
+
+.price {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.price span {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.card ul {
+    text-align: left;
+    padding-left: 25px;
+}
+
+.card button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* Three distinct card designs */
+.basic {
+    background-color: #eff6ff;
+    border-color: #60a5fa;
+}
+
+.basic button {
+    background-color: #2563eb;
+}
+
+.standard {
+    background-color: #ecfdf5;
+    border-color: #34d399;
+    border-width: 3px;
+}
+
+.standard button {
+    background-color: #059669;
+}
+
+.premium {
+    background-color: #faf5ff;
+    border-color: #c084fc;
+    border-style: dashed;
+}
+
+.premium button {
+    background-color: #9333ea;
+}
+
+/* Display property demonstration */
+.display-demo {
+    max-width: 950px;
+    margin: 10px auto 40px;
+    padding: 25px;
+    background-color: white;
+    border: 2px solid #cbd5e1;
+    border-radius: 15px;
+}
+
+.display-demo h2 {
+    color: #172554;
+}
+
+.explanation {
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+/* Block: takes a separate line */
+.block-example {
+    display: block;
+    width: 200px;
+    padding: 8px;
+    margin: 8px 0;
+    background-color: #dbeafe;
+    border: 1px solid #2563eb;
+}
+
+/* Inline: remains in the same line */
+.inline-example {
+    display: inline;
+    background-color: #fef3c7;
+    border: 1px solid #d97706;
+    padding: 5px;
+}
+
+/* Inline-block: inline placement with dimensions */
+.inline-block-example {
+    display: inline-block;
+    width: 120px;
+    height: 65px;
+    margin: 5px;
+    padding: 15px 5px;
+    text-align: center;
+    background-color: #f3e8ff;
+    border: 2px solid #9333ea;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    .cards {
+        padding: 25px 15px;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    .display-demo {
+        margin: 10px 15px 30px;
+    }
+}
